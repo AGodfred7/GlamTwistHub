@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="GlamTwist Hub description goes here. Include keywords such as '360 photo booths', 'traditional booths', 'digital invitations', and 'event planning services'.">
+  <meta name="keywords" content="event planning, 360 photo booths, traditional booths, digital invitations, paper invitations, event coordination">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="GlamTwist Hub">
+  <meta property="og:description" content="GlamTwist Hub description goes here. Include keywords such as '360 photo booths', 'traditional booths', 'digital invitations', and 'event planning services'.">
+  <meta property="og:image" content="https://example.com/image.jpg">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="GlamTwist Hub">
+  <meta name="twitter:description" content="GlamTwist Hub description goes here. Include keywords such as '360 photo booths', 'traditional booths', 'digital invitations', and 'event planning services'.">
+  <meta name="twitter:image" content="https://example.com/image.jpg">
+  <title>GlamTwist Hub</title>
+  <link rel="canonical" href="https://example.com">
+
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <link rel="icon" type="image/png" href="./assets/images/favicon-16x16.png">
+
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+ 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css">
+
+  <script src="./assets/js/script.js"></script>
+
+</head>
+<body>
+
+<header class="header-scrolled">
+        
+            <a href="#" class="logo">
+                <img src="./assets/images/logo-trasparente.PNG" alt="Your Logo">
+            </a>
+            <ul class="navbar">
+                <li class="navitem">
+                    <a href="#home">HOME</a>
+                </li>
+
+                <li class="navitem">
+                        <a href="#about">ABOUT US</a>
+                </li>
+
+                <li class="navitem">
+                    <a href="#services">SERVICES</a>
+                </li>
+
+                <li class="navitem">
+                    <a href="#contact">CONTACT US</a>
+                </li>
+            </ul> 
+
+            <div class="nav-right">
+              <div class="dropdown" id="languageDropdown">
+                <a href="#" id="languageBtn"><i class="ri-global-fill"></i><span>IT</span></a>
+                <div class="dropdown-content" id="languageOptions">
+                    <a href="#" id="enLanguage">EN</a>
+                    <a href="#" id="itaLanguage">ITA</a>
+                </div>
+              </div>
+                <div class="dropdown">
+                  <a href="#">BLOG</a>
+                  <div class="dropdown-content">
+                    <a href="https://publuu.com/flip-book/458817/1033415" target="blank">Catalog</a>
+                  </div>
+                </div>
+                <a href="https://publuu.com/flip-book/458817/1033415" target="blank">BLOG</a>
+                <a href="#"><i class="ri-global-fill"><span>IT</span></i></a>
+                <div class="bx bx-menu" id="menu-icon"></div>
+            </div>
+
+    <script>
+      let menu = document.querySelector('#menu-icon');
+      let navbar = document.querySelector('.navbar');
+
+      menu.onclick = () => {
+      menu.classList.toggle('bx-x');
+      navbar.classList.toggle('open');
+      };
+
+      const navLinks = document.querySelectorAll('.navitem a');
+
+      // Add event listener to each navigation link
+      navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        // Reset to default conditions
+        menu.classList.remove('bx-x');
+        navbar.classList.remove('open');
+      });
+});
+
+
+    </script>
+</header>
+
+<section class="home" id="home">
+    <div class="home-text">
+      <img class="home-video" id="bgVid" src="./assets/videos/women-dancing.gif" alt="video">
+    </div>
+</section>
+
+<section class="about" id="about">
+    <div class="about-container">
+        <div>
+          <h2>GlamTwist Hub</h2>
+        </div>
+        <div class="about-text">
+          <p>Welcome to GlamTwist Hub, where excellence meets refinement in every detail. Immerse yourself in a realm where sophistication reigns supreme, and creativity knows no bounds. From the first glance of our carefully crafted digital invitations to the tactile luxury of our physical cards, every element speaks to refined tastes and impeccable style.</p>
+          <p>Step into our world of curated allure, where our designed 360 and modern photo booths await to capture timeless moments with style. Whether it's a lavish wedding affair or an exclusive corporate gathering, trust GlamTwist Hub to orchestrate an experience that captures the essence of refined taste, leaving an indelible mark on every guest's memory.</p>
+        </div>
+    </div>
+</section>
+
+
+<section class="services" id="services">
+  <h2 class="services-title">OUR SERVICES</h2>
+
+  <div class="card-row">
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <div class="card-image"><img src="./assets/images/3921713.jpg" alt="about-us"> </div>
+          <div class="card-text">PHOTO BOOTH</div>
+        </div>
+        <div class="card-back">
+          Create lasting memories with our top-of-the-line photo booth experience, offering high-quality photography and a variety of fun props to enhance every snapshot.
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <div class="card-image"><img src="./assets/images/4792045.jpg" alt="about-us"></div>
+          <div class="card-text">INVITATIONS</div>
+        </div>
+        <div class="card-back">
+          Set the tone for your special event with beautifully designed invitations that reflect your unique style and theme.
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <div class="card-image"><img src="./assets/images/3921713.jpg" alt="about-us"></div>
+          <div class="card-text">360 PHOTO BOOTH</div>
+        </div>
+        <div class="card-back">
+          Description 3
+        </div>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-inner">
+        <div class="card-front">
+          <div class="card-image"><img src="./assets/images/3921713.jpg" alt="about-us"></div>
+          <div class="card-text">EVENT WEBSITES</div>
+        </div>
+        <div class="card-back">
+          Create a stunning online presence for your event with our customizable event websites, featuring RSVP management, guest lists, and more.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2 class="gallery-title">GALLERY</h2>
+  <div class="gallery">
+  <video id="slider" autoplay muted loop>
+    <source src="./assets/videos/funtime.mp4" type="video/mp4">
+  </video>
+</section >
+<ul class="navigation" >
+    <li onclick="videoUrl('./assets/videos/funtime.mp4')"><img src="./assets/images/logo-normale.PNG" alt="thumbnail"></li>
+    <li onclick="videoUrl('./assets/videos/women-dancing.mp4')"><img src="./assets/images/logo-normale.PNG" alt="thumbnail"></li>
+    <li onclick="videoUrl('./assets/videos/guys-popping.mp4')"><img src="./assets/images/logo-normale.PNG" alt="thumbnail"></li>
+    <li onclick="videoUrl('./assets/videos/clubing.mp4')"><img src="./assets/images/logo-normale.PNG" alt="thumbnail"></li>
+  </ul>
+  </div>
+</section >
+<script type="text/javascript">
+  function videoUrl(hmmmmmm) {
+    document.getElementById("slider").src = hmmmmmm;
+  }
+</script>
+
+<section class="contact" id="contact">
+  <h2 class="contact-title" >CONTACT US</h2>
+
+  <form id="contactForm" method="POST">
+    <div class="input-box">
+      <div class="input-field field">
+        <input type="text" placeholder="Full Name" id="name" class="item" required>
+        <div class="error-txt">Full Name can't be blank</div>
+      </div>
+      <div class="input-field field">
+        <input type="email" placeholder="Email Address" id="email" class="item" required>
+        <div class="error-txt">Email Address can't be blank</div>
+      </div>
+    </div>
+
+    <div class="input-box">
+      <div class="input-field field">
+        <input type="tel" placeholder="Phone Number" id="phone" class="item" required>
+        <div class="error-txt">Phone Number can't be blank</div>
+      </div>
+      <div class="input-field field">
+        <input type="text" placeholder="Subject" id="subject" class="item" required>
+        <div class="error-txt">Subject can't be blank</div>
+      </div>
+    </div>
+
+    <div class="textarea-field field">
+      <textarea name="#" id="message" cols="30" rows="10" placeholder="Your Message" class="item" required></textarea>
+      <div class="error-txt">Message can't be blank</div>
+    </div>
+
+    <button id="btn" type="submit">Send Message</button>
+  </form>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script>
+    var btn = document.getElementById('btn');
+    var form = document.getElementById('contactForm');
+
+    btn.addEventListener('click', function(e) {
+      e.preventDefault();
+
+      var name = document.getElementById('name').value;
+      var email = document.getElementById('email').value;
+      var phone = document.getElementById('phone').value;
+      var subject = document.getElementById('subject').value;
+      var message = document.getElementById('message').value;
+      var body = 'name: ' + name + '<br/> email: ' + email + '<br/> phone: ' + phone + '<br/> subject: ' + subject + '<br/> message: ' + message;
+
+      Email.send({
+        SecureToken: "9cb23832-8a61-4b77-a73c-d5f1c8aeea15",
+        To: 'info@glamtwisthub.com',
+        From: "info@glamtwisthub.com",
+        Subject: "Contact message",
+        Body: body
+      }).then(
+        message => {
+          if (message == 'OK') {
+            Swal.fire({
+              title: "Success!",
+              text: "Message sent successfully!",
+              icon: "success"
+            });
+
+            // Reset form fields after successful submission
+            form.reset();
+          }
+        }
+      );
+    });
+
+    function checkInput() {
+      const items = document.querySelectorAll('.item');
+
+      for (const item of items) {
+        if (item.value === '') {
+          item.classList.add('error');
+          item.parentElement.classList.add('error');
+        }
+
+        item.addEventListener("keyup", () => {
+          if (item.value !== '') {
+            item.classList.remove('error');
+            item.parentElement.classList.remove('error');
+          } else {
+            item.classList.add('error');
+            item.parentElement.classList.add('error');
+          }
+        });
+      }
+    }
+  </script>
+</section>
+<section class="footer">
+  <div class="footer-box"> 
+    <h3>Contact Us</h3>
+    <div id="contact-info">
+      <div>
+        <i class="ri-mail-line"></i><span>info@glamtwisthub.com</span>
+      </div>
+      <div>
+      <i class="ri-whatsapp-line"></i><span>+39 3490021355</span> 
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-box"> 
+    <h3>Quick links</h3>
+    <a href="#">Services</a>
+    <a href="#">About Us</a>
+    <a href="#contact">Contact form</a>
+  </div>
+
+  <div class="footer-box"> 
+    <h3>Follow Us </h3>
+    <a href="#"><i id="insta" class="ri-instagram-fill"><span>instagram</span></i></a>
+  </div>
+  
+</section>
+</body>
+</html>
