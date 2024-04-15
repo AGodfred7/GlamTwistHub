@@ -190,6 +190,18 @@
   function videoUrl(hmmmmmm) {
     document.getElementById("slider").src = hmmmmmm;
   }
+
+   // Function to change the video source and reset to default state
+   function videoUrl(videoSrc) {
+    const video = document.getElementById("slider");
+    // Set the new video source
+    video.src = videoSrc;
+    // Reset the video to its default state after 100 milliseconds
+    setTimeout(function () {
+      video.load(); // Reload the video
+      video.play(); // Start playing the video
+    }, 100);
+  }
 </script>
 </section >
 <section class="contact" id="contact">

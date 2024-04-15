@@ -659,6 +659,9 @@ form button:hover {
     .card {
         width:230px;
     }
+    .navigation li img:hover {
+        width: 150px;
+    }
 }
 
 @media (max-width: 1050px){
@@ -765,6 +768,9 @@ form button:hover {
     .contact {
         min-height: 90vh;
     }
+    .navigation li img:hover {
+        width: 120px;
+    }
 }
 
 @media (max-width: 450px){
@@ -783,6 +789,9 @@ form button:hover {
 
     .navigation li img {
         width: 60px;
+    }
+    .navigation li img:hover {
+        width: 100px;
     }
 
 }
