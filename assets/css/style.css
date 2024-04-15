@@ -605,7 +605,6 @@ form button:hover {
 }
 
 .footer-box a:hover {
-    transform: translateX(-5px);
     color: var(--animation-color);
 }
 
@@ -619,6 +618,13 @@ form button:hover {
 
 .no-hover:hover {
     transform: none;
+}
+
+.copyright {
+    text-align: center;
+    padding: 20px;
+    font-size: 15px;
+    color: var(--title-color);
 }
 /*===================== MEDIA QUERIES =====================*/
 
