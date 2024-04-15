@@ -288,23 +288,33 @@
         <i class="ri-mail-line"></i><span>info@glamtwisthub.com</span>
       </div>
       <div>
-      <a href="https://wa.me/+393490021355"><i class="ri-whatsapp-line"></i><span>Chat with us</span></a> 
+      <a href="https://wa.me/+393490021355"  class="no-hover"><i class="ri-whatsapp-line"></i><span>Chat with us</span></a> 
       </div>
     </div>
   </div>
 
   <div class="footer-box"> 
     <h3>Quick links</h3>
-    <a href="#">Services</a>
-    <a href="#">About Us</a>
-    <a href="#contact">Contact form</a>
+    <a href="#"  class="no-hover">Services</a>
+    <a href="#"  class="no-hover">About Us</a>
+    <a href="#contact"  class="no-hover">Contact form</a>
   </div>
 
   <div class="footer-box"> 
     <h3>Follow Us </h3>
-    <a href="https://www.instagram.com/glamtwist_hub/"><i id="insta" class="ri-instagram-fill"><span>instagram</span></i></a>
+    <a href="https://www.instagram.com/glamtwist_hub/"  class="no-hover"><i id="insta" class="ri-instagram-fill"><span>instagram</span></i></a>
   </div>
-  
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+  const footerLinks = document.querySelectorAll('.footer-box a');
+
+  footerLinks.forEach(link => {
+    link.addEventListener('click', function() {
+      this.classList.add('no-hover');
+    });
+  });
+});
+  </script>
 </section>
 </body>
 </html>

@@ -617,7 +617,9 @@ form button:hover {
     margin-left: 10px;
 }
 
-
+.no-hover:hover {
+    transform: none;
+}
 /*===================== MEDIA QUERIES =====================*/
 
 @media (max-width: 1700px){
