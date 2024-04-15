@@ -594,6 +594,10 @@ form button:hover {
 #contact-info {
     display: flex;
     flex-direction: column;
+    
+}
+#g {    
+    margin-bottom: 0.8rem;
 }
 .footer-box a {
     color: var(--title-color);
