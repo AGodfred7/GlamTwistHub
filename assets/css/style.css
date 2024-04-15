@@ -61,7 +61,7 @@ body {
 
 }
 
-.section-separator {
+.separator {
     border: none;
     height: 2px;
     background-color: white;
@@ -753,7 +753,7 @@ form button:hover {
 
     .gallery video {
         width: 350px;
-        height: 80%;
+        height: 70%;
 
     }
     .about-text p {
