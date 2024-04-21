@@ -528,7 +528,6 @@ form button:hover {
 
 .gallery video{
     width: 600px;
-    height: 100%;
     object-fit: cover;
     border-radius: 4px;
     background: #fff;
@@ -742,7 +741,6 @@ form button:hover {
     
     .gallery video {
         width: 600px;
-        height: 100%;
         object-fit: cover;
         border-radius: 4px;
         background: #fff;
