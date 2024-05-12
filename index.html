@@ -219,62 +219,7 @@
   </form>
   <script src="https://smtpjs.com/v3/smtp.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-  <script>
-    var btn = document.getElementById('btn');
-    var form = document.getElementById('contactForm');
-
-    btn.addEventListener('click', function(e) {
-      e.preventDefault();
-
-      var name = document.getElementById('name').value;
-      var email = document.getElementById('email').value;
-      var phone = document.getElementById('phone').value;
-      var subject = document.getElementById('subject').value;
-      var message = document.getElementById('message').value;
-      var body = 'name: ' + name + '<br/> email: ' + email + '<br/> phone: ' + phone + '<br/> subject: ' + subject + '<br/> message: ' + message;
-
-      Email.send({
-        SecureToken: "9cb23832-8a61-4b77-a73c-d5f1c8aeea15",
-        To: 'info@glamtwisthub.com',
-        From: "info@glamtwisthub.com",
-        Subject: "Contact message",
-        Body: body
-      }).then(
-        message => {
-          if (message == 'OK') {
-            Swal.fire({
-              title: "Success!",
-              text: "Message sent successfully!",
-              icon: "success"
-            });
-            // Reset form fields after successful submission
-            form.reset();
-          }
-        }
-      );
-    });
-
-    function checkInput() {
-      const items = document.querySelectorAll('.item');
-
-      for (const item of items) {
-        if (item.value === '') {
-          item.classList.add('error');
-          item.parentElement.classList.add('error');
-        }
-
-        item.addEventListener("keyup", () => {
-          if (item.value !== '') {
-            item.classList.remove('error');
-            item.parentElement.classList.remove('error');
-          } else {
-            item.classList.add('error');
-            item.parentElement.classList.add('error');
-          }
-        });
-      }
-    }
-  </script>
+  
 </section>
 
 <hr class="separator">
@@ -319,6 +264,6 @@
   <p >Copyright &copy; 2024. All rights reserved by GlamTwist_Hub.</p>
 </div>
 
-<script src="./assets/js/script.js"></script>
+<script defer src="./assets/js/script.js"></script>
 </body>
 </html>
